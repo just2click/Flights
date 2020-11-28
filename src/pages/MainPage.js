@@ -5,7 +5,7 @@ import destinationCities from '../assets/destinations/destinationsList'
 
 export const MainPage = () => {
   let [path, setPath] = useState([null, null]);
-  const [checkPath, setCheckPath] = useState(false);
+  let [checkPath, setCheckPath] = useState(false);
   let [resetSelections, setResetSelections] = useState(false);
   let [go, setGo] = useState(0);
   let [origins, setOrigins] = useState([...destinationCities]);
@@ -29,7 +29,7 @@ export const MainPage = () => {
     setTimeout(() => {
       setResetSelections(resetSelections = !resetSelections);
       path = [null, null];
-      setCheckPath(false);
+      setCheckPath(checkPath = false);
     }, 300);
   }
 
@@ -37,7 +37,7 @@ export const MainPage = () => {
     setOrigins(origins);
     setDestinations(origins);
     const isPathFull = (path[0] !== null && path[1] !== null);
-    setCheckPath(isPathFull);
+    setCheckPath(checkPath = isPathFull);
     if (isPathFull) {
       toggleResetSelections();
     }
@@ -68,7 +68,8 @@ export const MainPage = () => {
   )
 
   const startFlight = () => {
-    setGo(go =+ 1)
+    setGo(go = !go);
+    resetLists();
   }
 
   return(
