@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    font-family: "OpenSans-SemiBold";
+    width: 100%;
+    font-weight: bold;
+    padding: 10px;
+    background: $clr1;
+    color: $clr3;
+    font-size: 40px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.app-desc {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: "OpenSans-Regular";
+}
+
+.show {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+
+/* CLOUD */
+
+.responsive-cloud {
+    display: flex;
+}
+
+
+/* DROPDOWN */
+
+.dropdown-button {
+    width: 200px;
+    height: 50px;
+    background-color: $clr1;
+    color: $clr3;
+    font-size: 17px;
+    font-family: 'OpenSans-Regular';
+    border: none;
+    border-radius: 20px;
+    margin: 0 10px 8px 0;
+    cursor: pointer;
+}
+
+.dropdown-button-open {
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 0;
+}
+
+.dropdown-button:hover {
+    background-color: $clr2;
+    opacity: .8;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.dropdown-menu {
+    max-height: 300px;
+    overflow-y: auto;
+    min-width: 200px;
+    box-shadow: 0 0px 9px rgba(0, 0, 0, .175);
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    background: white;
+    z-index: 2;
+}
+
+.dropdown-menu-open {}
+
+.sources-links {
+    display: flex;
+    flex-direction: column;
+    .dropdown-item {
+        padding-left: 8px;
+        text-align: left;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #efefef;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #efefef;
+    border-radius: 10px;
+}
+
+
+/* SPINNER */
+
+.spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+}
+
+.lds-dual-ring:after {
+    content: ' ';
+    display: block;
+    width: 46px;
+    height: 46px;
+    margin: 1px;
+    border-radius: 50%;
+    border: 5px solid #a1a5a3;
+    border-color: #a1a5a3 transparent #a1a5a3 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+.controls {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+    font-size: 1em;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 760px) {
+    .load-btns {
+        flex-direction: column;
+    }
+    .app-button {
+        margin-top: 15px;
+    }
+}

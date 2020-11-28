@@ -1,0 +1,99 @@
+const destinationCities = [{
+    id: "london",
+    title: "London",
+    lat: 51.5002,
+    lng: -0.1262
+},{
+    id: "vilnius",
+    title: "Vilnius",
+    lat: 54.6896,
+    lng: 25.2799
+},
+{
+    id: "brussels",
+    title: "Brussels",
+    lat: 50.8371,
+    lng: 4.3676
+}, {
+    id: "prague",
+    title: "Prague",
+    lat: 50.0878,
+    lng: 14.4205
+}, {
+    id: "athens",
+    title: "Athens",
+    lat: 37.9792,
+    lng: 23.7166
+}, {
+    id: "reykjavik",
+    title: "Reykjavik",
+    lat: 64.1353,
+    lng: -21.8952
+}, {
+    id: "dublin",
+    title: "Dublin",
+    lat: 53.3441,
+    lng: -6.2675
+}, {
+    id: "oslo",
+    title: "Oslo",
+    lat: 59.9138,
+    lng: 10.7387
+}, {
+    id: "lisbon",
+    title: "Lisbon",
+    lat: 38.7072,
+    lng: -9.1355
+}, {
+    id: "moscow",
+    title: "Moscow",
+    lat: 55.7558,
+    lng: 37.6176
+}, {
+    id: "belgrade",
+    title: "Belgrade",
+    lat: 44.8048,
+    lng: 20.4781
+}, {
+    id: "bratislava",
+    title: "Bratislava",
+    lat: 48.2116,
+    lng: 17.1547
+}, {
+    id: "ljublana",
+    title: "Ljubljana",
+    lat: 46.0514,
+    lng: 14.5060
+}, {
+    id: "madrid",
+    title: "Madrid",
+    lat: 40.4167,
+    lng: -3.7033
+}, {
+    id: "stockholm",
+    title: "Stockholm",
+    lat: 59.3328,
+    lng: 18.0645
+}, {
+    id: "bern",
+    title: "Bern",
+    lat: 46.9480,
+    lng: 7.4481
+}, {
+    id: "kiev",
+    title: "Kiev",
+    lat: 50.4422,
+    lng: 30.5367
+}, {
+    id: "paris",
+    title: "Paris",
+    lat: 48.8567,
+    lng: 2.3510
+}, {
+    id: "new york",
+    title: "New York",
+    lat: 40.43,
+    lng: -74
+}];
+
+export default destinationCities;
